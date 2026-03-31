@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ultragaz Anápolis – Entrega de Gás e Água Mineral | Peça pelo WhatsApp</title>
+  <meta name="description" content="Distribuidora Ultragaz em Anápolis-GO. Entrega rápida de botijão de gás (P5, P13, P20, P45) e água mineral. Peça agora pelo WhatsApp. Santa Maria de Nazareth.">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://maps.google.com https://www.google.com; connect-src 'self'; base-uri 'self'; form-action 'self' https://wa.me;">
+  <link rel="canonical" href="https://ultragaz-anapolis.com.br/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ultragaz-anapolis.com.br/">
+  <meta property="og:title" content="Ultragaz Anápolis – Entrega de Gás e Água Mineral">
+  <meta property="og:description" content="Distribuidora autorizada Ultragaz em Anápolis-GO. Entrega rápida de botijão de gás e água mineral. Peça agora pelo WhatsApp.">
+  <meta property="og:image" content="https://ultragaz-anapolis.com.br/img/fachada.png">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Ultragaz Anápolis">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap"></noscript>
+
+  <!-- CSS CRÍTICO INLINE (above the fold) -->
+  <style>
+    :root {
+      --blue:#003DA5;--blue-mid:#0050CC;--blue-deep:#00266B;--blue-light:#E8F1FF;
+      --green:#25D366;--green-dark:#128C4E;--orange:#FF6B35;
+      --white:#FFFFFF;--off-white:#F8FAFF;--gray-100:#EDF0F7;
+      --text:#0F1629;--text-muted:#5A6380;
+      --grad-hero:linear-gradient(145deg,#00266B 0%,#003DA5 45%,#0060D4 100%);
+      --grad-green:linear-gradient(135deg,#25D366,#128C4E);
+      --shadow-blue:0 8px 32px rgba(0,61,165,0.22);
+      --radius-full:9999px;--radius-md:16px;--radius-sm:10px;
+      --font:'Nunito',system-ui,-apple-system,sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--font);color:var(--text);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    img{max-width:100%;height:auto;display:block}
+    a{color:inherit;text-decoration:none}
+    .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+    /* HEADER */
+    .header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,61,165,0.08);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 1px 20px rgba(0,61,165,0.07)}
+    .header__logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex-shrink:0}
+    .header__logo-icon{width:36px;height:36px;background:var(--grad-hero);border-radius:10px;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 10px rgba(0,61,165,0.3);flex-shrink:0}
+    .header__logo-text{font-size:.95rem;font-weight:800;color:var(--blue);line-height:1.15;letter-spacing:-.2px}
+    .header__logo-text small{display:block;font-size:.65rem;font-weight:600;color:var(--text-muted);letter-spacing:.3px}
+    .header__contact{display:flex;align-items:center;gap:10px}
+    .header__phone{display:none;align-items:center;gap:6px;color:var(--text-muted);font-size:.82rem;font-weight:700;text-decoration:none}
+    .header__whatsapp{display:flex;align-items:center;gap:7px;background:var(--grad-green);color:var(--white);font-family:var(--font);font-size:.82rem;font-weight:800;padding:9px 18px;border-radius:var(--radius-full);text-decoration:none;box-shadow:0 3px 12px rgba(37,211,102,.3);transition:all .2s ease}
+
+    /* HERO */
+    #hero{background:var(--grad-hero);color:var(--white);padding:56px 20px 100px;position:relative;overflow:hidden}
+    #hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);background-size:28px 28px;pointer-events:none}
+    #hero::after{content:'';position:absolute;top:-60px;right:-60px;width:400px;height:400px;background:radial-gradient(circle,rgba(0,150,255,.15) 0%,transparent 70%);border-radius:50%;pointer-events:none}
+    .hero__glow{position:absolute;bottom:-80px;left:-40px;width:320px;height:320px;background:radial-gradient(circle,rgba(37,211,102,.10) 0%,transparent 70%);border-radius:50%;pointer-events:none}
+    .hero__wrapper{position:relative;z-index:1;max-width:1200px;margin:0 auto}
+    .hero__badge{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:rgba(255,255,255,.95);font-size:.72rem;font-weight:800;padding:6px 16px;border-radius:var(--radius-full);letter-spacing:.8px;text-transform:uppercase;margin-bottom:22px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+    .hero__title{font-size:2.1rem;font-weight:300;line-height:1.18;margin-bottom:18px;color:var(--white);letter-spacing:-.5px}
+    .hero__title strong{font-weight:800;display:block}
+    .hero__subtitle{font-size:1rem;opacity:.85;line-height:1.65;margin-bottom:24px;max-width:420px}
+    .hero__trust-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+    .hero__trust-chip{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.9);font-size:.72rem;font-weight:700;padding:5px 12px;border-radius:var(--radius-full);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);white-space:nowrap}
+    .hero__trust-chip-dot{width:6px;height:6px;background:var(--green);border-radius:50%;box-shadow:0 0 6px var(--green);flex-shrink:0}
+    .hero__actions{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+    .btn-whatsapp{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--grad-green);color:var(--white);font-family:var(--font);font-size:.95rem;font-weight:800;padding:14px 26px;border-radius:var(--radius-full);border:none;cursor:pointer;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.35);transition:transform .2s ease,box-shadow .2s ease;white-space:nowrap;letter-spacing:.2px}
+    .btn-whatsapp--large{font-size:1.05rem;padding:17px 34px;gap:11px;box-shadow:0 6px 28px rgba(37,211,102,.40)}
+    .hero__phone-link{color:rgba(255,255,255,.75);font-size:.88rem;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+    .hero__mascote{margin-top:44px;text-align:center}
+    .hero__mascote img{max-width:170px;margin:0 auto;filter:drop-shadow(0 16px 40px rgba(0,0,0,.35))}
+    @media(min-width:768px){
+      .header{padding:14px 40px}
+      .header__phone{display:flex}
+      #hero{padding:80px 40px 120px}
+      .hero__wrapper{display:flex;align-items:center;justify-content:space-between;gap:48px}
+      .hero__content{max-width:54%}
+      .hero__title{font-size:3rem}
+      .hero__actions{flex-direction:row;align-items:center}
+      .hero__mascote{margin-top:0;flex-shrink:0}
+      .hero__mascote img{max-width:240px}
+    }
+  </style>
+
+  <!-- CSS não-crítico -->
+  <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════
+       HEADER
+  ══════════════════════════════════ -->
+  <header class="header">
+    <a href="#" class="header__logo" aria-label="Ultragaz Anápolis — início">
+      <div class="header__logo-icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2C12 2 19 8.5 19 14C19 17.866 15.866 21 12 21C8.134 21 5 17.866 5 14C5 10 8.5 7 8.5 7C8.5 7 9 10.5 12 10.5C12 10.5 9.5 8 12 2Z" fill="white"/>
+        </svg>
+      </div>
+      <div class="header__logo-text">
+        Ultragaz Anápolis
+        <small>Distribuidora Autorizada</small>
+      </div>
+    </a>
+
+    <nav class="header__contact" aria-label="Contato rápido">
+      <a href="tel:+556237061710" class="header__phone" aria-label="Ligar agora">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.22 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        (62) 3706-1710
+      </a>
+      <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20mais%20informações.%20Pode%20me%20ajudar"
+         class="header__whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+        WhatsApp
+      </a>
+    </nav>
+  </header>
+
+  <main id="conteudo-principal">
+
+    <!-- ══════════════════════════════════
+         HERO
+    ══════════════════════════════════ -->
+    <section id="hero" aria-labelledby="hero-title">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__wrapper">
+        <div class="hero__content">
+          <span class="hero__badge">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="#25D366" aria-hidden="true"><circle cx="5" cy="5" r="5"/></svg>
+            Distribuidora Autorizada Ultragaz
+          </span>
+
+          <h1 class="hero__title" id="hero-title">
+            Seu gás e sua água,
+            <strong>entregues rápido em Anápolis</strong>
+          </h1>
+
+          <p class="hero__subtitle">
+            Distribuidora Ultragaz no bairro Santa Maria de Nazareth. Entrega no mesmo dia, atendimento pelo WhatsApp.
+          </p>
+
+          <div class="hero__trust-row" aria-label="Diferenciais">
+            <span class="hero__trust-chip">
+              <span class="hero__trust-chip-dot" aria-hidden="true"></span>
+              Produto original
+            </span>
+            <span class="hero__trust-chip">
+              <span class="hero__trust-chip-dot" aria-hidden="true"></span>
+              Entrega no mesmo dia
+            </span>
+            <span class="hero__trust-chip">
+              <span class="hero__trust-chip-dot" aria-hidden="true"></span>
+              Seg–Sáb 7h–18h
+            </span>
+          </div>
+
+          <div class="hero__actions">
+            <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20mais%20informações.%20Pode%20me%20ajudar"
+               class="btn-whatsapp btn-whatsapp--large"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Pedir agora pelo WhatsApp">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+              Pedir Agora no WhatsApp
+            </a>
+            <a href="tel:+556237061710" class="hero__phone-link">Ou ligue: (62) 3706-1710</a>
+          </div>
+        </div>
+
+        <div class="hero__mascote" aria-hidden="true">
+          <img src="img/mascote.png" alt="" width="200" height="260" fetchpriority="high">
+        </div>
+      </div>
+
+      <!-- Wave divisor -->
+      <div class="wave-bottom" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#F8FAFF"/>
+        </svg>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════
+         BENEFÍCIOS
+    ══════════════════════════════════ -->
+    <section id="beneficios" class="section section--soft" aria-labelledby="beneficios-title">
+      <div class="container">
+        <div style="text-align:center">
+          <span class="section__eyebrow" aria-hidden="true">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="#003DA5"><circle cx="5" cy="5" r="5"/></svg>
+            Por que a gente?
+          </span>
+          <h2 class="section__title section__title--center" id="beneficios-title">Por que pedir com a gente?</h2>
+          <p class="section__subtitle">Simplicidade, segurança e velocidade — para você não precisar sair de casa.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-item fade-in">
+            <div class="benefit-item__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3 class="benefit-item__title">Entrega rápida</h3>
+            <p class="benefit-item__text">Receba no mesmo dia, direto na sua porta.</p>
+          </div>
+
+          <div class="benefit-item fade-in">
+            <div class="benefit-item__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            </div>
+            <h3 class="benefit-item__title">Distribuidora autorizada</h3>
+            <p class="benefit-item__text">Produto original Ultragaz com garantia de segurança.</p>
+          </div>
+
+          <div class="benefit-item fade-in">
+            <div class="benefit-item__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><line x1="6" y1="15" x2="9" y2="15"/><line x1="12" y1="15" x2="15" y2="15"/></svg>
+            </div>
+            <h3 class="benefit-item__title">Pagamento facilitado</h3>
+            <p class="benefit-item__text">Pix, dinheiro e cartão. Você escolhe.</p>
+          </div>
+
+          <div class="benefit-item fade-in">
+            <div class="benefit-item__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </div>
+            <h3 class="benefit-item__title">Atendimento WhatsApp</h3>
+            <p class="benefit-item__text">Peça sem sair de casa, em poucos cliques.</p>
+          </div>
+
+          <div class="benefit-item fade-in">
+            <div class="benefit-item__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><circle cx="7" cy="7" r="1.5" fill="#003DA5"/></svg>
+            </div>
+            <h3 class="benefit-item__title">Preço justo</h3>
+            <p class="benefit-item__text">Sem surpresas. Valor combinado antes da entrega.</p>
+          </div>
+
+          <div class="benefit-item fade-in">
+            <div class="benefit-item__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </div>
+            <h3 class="benefit-item__title">Confiança do bairro</h3>
+            <p class="benefit-item__text">Anos atendendo famílias em Anápolis com pontualidade.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wave-bottom" aria-hidden="true">
+        <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,25 C480,50 960,0 1440,25 L1440,50 L0,50 Z" fill="#ffffff"/>
+        </svg>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════
+         PRODUTOS: GÁS
+    ══════════════════════════════════ -->
+    <section id="gas" class="section section--white" aria-labelledby="gas-title">
+      <div class="container">
+        <div style="text-align:center">
+          <span class="section__eyebrow">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="#003DA5"><circle cx="5" cy="5" r="5"/></svg>
+            Gás de cozinha
+          </span>
+          <h2 class="section__title section__title--center" id="gas-title">Botijões de Gás</h2>
+          <p class="section__subtitle">Do P5 ao P45 — encontre o tamanho ideal para sua casa ou negócio.</p>
+        </div>
+
+        <div class="products-grid">
+
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/P5.png" alt="Botijão de gás P5 Ultragaz para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Botijão P5</h3>
+              <p class="product-card__desc">Ideal para apartamentos e uso rápido. Leve e prático.</p>
+              <span class="product-card__price-badge">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                Consulte o valor
+              </span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20pedir%20um%20Botijão%20P5.%20Pode%20me%20informar%20o%20valor%3F"
+                 class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Pedir Botijão P5 pelo WhatsApp">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+                Pedir no WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card product-card--featured fade-in">
+            <span class="product-card__badge">Mais vendido</span>
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/P13.png" alt="Botijão de gás P13 Ultragaz – o mais vendido em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Botijão P13</h3>
+              <p class="product-card__desc">O mais usado nas casas brasileiras. Cozinhe com tranquilidade.</p>
+              <span class="product-card__price-badge">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                Consulte o valor
+              </span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20pedir%20um%20Botijão%20P13.%20Pode%20me%20informar%20o%20valor%3F"
+                 class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Pedir Botijão P13 pelo WhatsApp">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+                Pedir no WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/P20.png" alt="Botijão de gás P20 Ultragaz para comércios em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Botijão P20</h3>
+              <p class="product-card__desc">Perfeito para comércios e quem consome mais. Maior autonomia.</p>
+              <span class="product-card__price-badge">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                Consulte o valor
+              </span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20pedir%20um%20Botijão%20P20.%20Pode%20me%20informar%20o%20valor%3F"
+                 class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Pedir Botijão P20 pelo WhatsApp">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+                Pedir no WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/P45.png" alt="Botijão de gás P45 Ultragaz para indústrias em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Botijão P45</h3>
+              <p class="product-card__desc">Para indústrias, restaurantes e alto consumo. Rendimento máximo.</p>
+              <span class="product-card__price-badge">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                Consulte o valor
+              </span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20pedir%20um%20Botijão%20P45.%20Pode%20me%20informar%20o%20valor%3F"
+                 class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Pedir Botijão P45 pelo WhatsApp">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+                Pedir no WhatsApp
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════
+         PRODUTOS: ÁGUA
+    ══════════════════════════════════ -->
+    <section id="agua" class="section section--soft" aria-labelledby="agua-title">
+      <div class="container">
+        <div style="text-align:center">
+          <span class="section__eyebrow">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="#003DA5"><circle cx="5" cy="5" r="5"/></svg>
+            Água mineral
+          </span>
+          <h2 class="section__title section__title--center" id="agua-title">Água Mineral</h2>
+          <p class="section__subtitle">Fresca e entregue na sua casa junto com o gás.</p>
+        </div>
+
+        <div class="products-grid products-grid--agua">
+
+          <article class="product-card product-card--featured fade-in">
+            <span class="product-card__badge">Mais pedido</span>
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/agua-20l.png" alt="Galão de água mineral 20L Pura para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Água 20L (Pura)</h3>
+              <p class="product-card__desc">Galão para toda a família. Hidratação garantida por dias.</p>
+              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20pedir%20um%20Galão%20de%20Água%2020L%20Pura." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Pedir Galão 20L pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/agua-gas-500ml.png" alt="Água com gás 500ml para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Água c/ Gás 500ml</h3>
+              <p class="product-card__desc">Refrescância com gás. Prática para levar a qualquer lugar.</p>
+              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20pedir%20Água%20com%20Gás%20500ml." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Pedir Água com Gás 500ml pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/agua-500ml.png" alt="Água sem gás 500ml para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Água s/ Gás 500ml</h3>
+              <p class="product-card__desc">Para o dia a dia, leve e prática. Ideal para a bolsa.</p>
+              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20pedir%20Água%20sem%20Gás%20500ml." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Pedir Água sem Gás 500ml pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/agua-5l.png" alt="Água sem gás 5 litros econômica para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Água s/ Gás 5L</h3>
+              <p class="product-card__desc">Econômica e prática para casa ou escritório.</p>
+              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20pedir%20Água%20sem%20Gás%205L." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Pedir Água 5L pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="wave-bottom" aria-hidden="true">
+        <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,0 C360,50 1080,0 1440,40 L1440,50 L0,50 Z" fill="#ffffff"/>
+        </svg>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════
+         ACESSÓRIOS
+    ══════════════════════════════════ -->
+    <section id="acessorios" class="section section--white" aria-labelledby="acessorios-title">
+      <div class="container">
+        <div style="text-align:center">
+          <span class="section__eyebrow">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="#003DA5"><circle cx="5" cy="5" r="5"/></svg>
+            Acessórios
+          </span>
+          <h2 class="section__title section__title--center" id="acessorios-title">Acessórios para Gás e Água</h2>
+          <p class="section__subtitle">Complete sua instalação com segurança e qualidade certificada.</p>
+        </div>
+
+        <div class="products-grid products-grid--acessorios">
+
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/REGISTRO.png" alt="Registro para gás de cozinha certificado em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Registro para Gás</h3>
+              <p class="product-card__desc">Segurança na sua cozinha. Troque regularmente para prevenir acidentes.</p>
+              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20comprar%20um%20Registro%20para%20Gás." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Comprar Registro para Gás pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/MANGUEIRA.png" alt="Mangueira para gás de cozinha certificada em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Mangueira para Gás</h3>
+              <p class="product-card__desc">Mangueira certificada, com validade em dia. Troque a cada 5 anos.</p>
+              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20comprar%20uma%20Mangueira%20para%20Gás." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Comprar Mangueira pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/bombinha.png" alt="Bombinha elétrica para galão de água 20 litros em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Bombinha Elétrica</h3>
+              <p class="product-card__desc">Água na medida certa, sem esforço. Funciona com galão 20L.</p>
+              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20comprar%20uma%20Bombinha%20Elétrica." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Comprar Bombinha pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════
+         SOBRE / CONFIANÇA
+    ══════════════════════════════════ -->
+    <section id="sobre" class="section section--soft" aria-labelledby="sobre-title">
+      <div class="container">
+
+        <p class="visually-hidden">A Ultragaz Anápolis é uma distribuidora autorizada de gás de cozinha e água mineral localizada na Rua Martinho Fontes, 374, bairro Santa Maria de Nazareth, em Anápolis – GO. Atende de segunda a sábado com entrega rápida de botijões P5, P13, P20 e P45, além de galões de água mineral 20 litros e acessórios para gás.</p>
+
+        <div class="about__inner">
+
+          <div class="about__text-col">
+            <span class="section__eyebrow">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="#003DA5"><circle cx="5" cy="5" r="5"/></svg>
+              Nossa história
+            </span>
+            <h2 class="section__title" id="sobre-title">Conheça a Ultragaz Anápolis</h2>
+
+            <p class="about__lead">
+              Somos uma distribuidora autorizada Ultragaz no bairro Santa Maria de Nazareth, em Anápolis – GO.
+            </p>
+            <p class="about__body">
+              Atendemos famílias, comércios e empresas com entrega rápida de gás de cozinha e água mineral. Nossa equipe é treinada para garantir segurança em cada entrega, e nosso compromisso é com a pontualidade e o respeito que você merece.
+            </p>
+
+            <div class="about__chips">
+              <span class="about__chip">
+                <span class="about__chip-icon" aria-hidden="true"><svg width="9" height="9" viewBox="0 0 10 8" fill="none"><polyline points="1 4 4 7 9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                Distribuidora autorizada
+              </span>
+              <span class="about__chip">
+                <span class="about__chip-icon" aria-hidden="true"><svg width="9" height="9" viewBox="0 0 10 8" fill="none"><polyline points="1 4 4 7 9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                Entrega segura
+              </span>
+              <span class="about__chip">
+                <span class="about__chip-icon" aria-hidden="true"><svg width="9" height="9" viewBox="0 0 10 8" fill="none"><polyline points="1 4 4 7 9 1" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                Atendimento humanizado
+              </span>
+            </div>
+
+            <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20mais%20informações.%20Pode%20me%20ajudar"
+               class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+              Fale com a gente
+            </a>
+          </div>
+
+          <div class="about__img-col">
+            <div class="about__photos">
+              <!-- Foto principal: fachada -->
+              <div class="about__photo-main">
+                <img src="img/fachada.png" alt="Fachada da distribuidora Ultragaz no bairro Santa Maria de Nazareth em Anápolis" width="800" height="450" loading="lazy">
+                <span class="about__photo-badge">Santa Maria de Nazareth, Anápolis – GO</span>
+              </div>
+              <!-- Fotos secundárias -->
+              <div class="about__photo-sm">
+                <img src="img/galeria/veiculo.png" alt="Veículo de entrega da Ultragaz Anápolis" width="400" height="300" loading="lazy">
+              </div>
+              <div class="about__photo-sm">
+                <img src="img/galeria/equipe.png" alt="Equipe da distribuidora Ultragaz Anápolis" width="400" height="300" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════
+         LOCALIZAÇÃO
+    ══════════════════════════════════ -->
+    <section id="localizacao" class="section section--white" aria-labelledby="localizacao-title">
+      <div class="container">
+        <div style="text-align:center">
+          <span class="section__eyebrow">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="#003DA5"><circle cx="5" cy="5" r="5"/></svg>
+            Onde estamos
+          </span>
+          <h2 class="section__title section__title--center" id="localizacao-title">Venha nos visitar</h2>
+          <p class="section__subtitle">Ou peça pelo WhatsApp e receba em casa.</p>
+        </div>
+
+        <div class="location__wrapper">
+          <div class="location__info-wrap">
+
+            <div class="location__address-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Endereço</strong><br>
+                <span>Rua Martinho Fontes, 374 – Santa Maria de Nazareth – Anápolis – GO</span>
+              </div>
+            </div>
+
+            <div class="location__address-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <div>
+                <strong>Horário</strong><br>
+                <span>Segunda a sábado, das 7h às 18h</span>
+              </div>
+            </div>
+
+            <div class="location__address-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.22 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <div>
+                <strong>Telefone</strong><br>
+                <a href="tel:+556237061710" class="footer__contact-link">(62) 3706-1710</a>
+              </div>
+            </div>
+
+            <p class="location__detail">
+              Atendemos toda a cidade de Anápolis e bairros da região. Faça seu pedido pelo WhatsApp e receba no conforto da sua casa.
+            </p>
+
+            <div class="location__actions">
+              <a href="https://www.google.com/maps/dir/?api=1&destination=-16.325644,-48.940027"
+                 class="btn-outline" target="_blank" rel="noopener noreferrer" aria-label="Como chegar">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                Como chegar
+              </a>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20mais%20informações.%20Pode%20me%20ajudar"
+                 class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+                Pedir pelo WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div class="map-container">
+              <div id="map-placeholder"
+                   data-src="https://maps.google.com/maps?q=-16.325644,-48.940027&hl=pt-BR&z=17&output=embed"
+                   role="img"
+                   aria-label="Clique para carregar o mapa da Ultragaz Anápolis"
+                   tabindex="0">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Clique para ver o mapa</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════
+         FAQ
+    ══════════════════════════════════ -->
+    <section id="faq" class="section section--soft" aria-labelledby="faq-title">
+      <div class="container" style="max-width:760px">
+        <div style="text-align:center">
+          <span class="section__eyebrow">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="#003DA5"><circle cx="5" cy="5" r="5"/></svg>
+            Dúvidas
+          </span>
+          <h2 class="section__title section__title--center" id="faq-title">Perguntas Frequentes</h2>
+        </div>
+
+        <div class="faq-list" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__question" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">
+              Qual o horário de atendimento?
+              <span class="faq-item__icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq-item__answer" id="faq-a1" role="region" aria-labelledby="faq-q1">
+              <div class="faq-item__answer-inner">De segunda a sábado, das 7h às 18h. Para horários atualizados, fale conosco pelo WhatsApp.</div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__question" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">
+              Quais formas de pagamento vocês aceitam?
+              <span class="faq-item__icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq-item__answer" id="faq-a2" role="region" aria-labelledby="faq-q2">
+              <div class="faq-item__answer-inner"><strong>Pix</strong>, <strong>dinheiro</strong>, <strong>cartão de débito</strong> e <strong>cartão de crédito</strong>. Pagamento feito no momento da entrega.</div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__question" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">
+              Quanto tempo demora a entrega?
+              <span class="faq-item__icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq-item__answer" id="faq-a3" role="region" aria-labelledby="faq-q3">
+              <div class="faq-item__answer-inner">Trabalhamos com entrega no <strong>mesmo dia</strong>. Após o pedido, informamos o tempo estimado pelo WhatsApp.</div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__question" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">
+              Preciso devolver o botijão vazio?
+              <span class="faq-item__icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq-item__answer" id="faq-a4" role="region" aria-labelledby="faq-q4">
+              <div class="faq-item__answer-inner">Sim. A troca acontece na entrega: nosso entregador leva o cheio e recolhe o vazio.</div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__question" aria-expanded="false" aria-controls="faq-a5" id="faq-q5">
+              Vocês instalam o botijão?
+              <span class="faq-item__icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq-item__answer" id="faq-a5" role="region" aria-labelledby="faq-q5">
+              <div class="faq-item__answer-inner">Nossos entregadores auxiliam na troca do botijão, sempre seguindo as normas de segurança.</div>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-item__question" aria-expanded="false" aria-controls="faq-a6" id="faq-q6">
+              Entregam em qual região?
+              <span class="faq-item__icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq-item__answer" id="faq-a6" role="region" aria-labelledby="faq-q6">
+              <div class="faq-item__answer-inner"><strong>Toda Anápolis</strong> e bairros próximos. Consulte sua localidade pelo WhatsApp — respondemos rapidinho!</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ══════════════════════════════════
+       RODAPÉ
+  ══════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top-border" aria-hidden="true"></div>
+    <div class="footer__inner">
+      <div class="footer__grid">
+
+        <div>
+          <div class="footer__brand-logo">
+            <div class="footer__brand-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C12 2 19 8.5 19 14C19 17.866 15.866 21 12 21C8.134 21 5 17.866 5 14C5 10 8.5 7 8.5 7C8.5 7 9 10.5 12 10.5C12 10.5 9.5 8 12 2Z" fill="white"/></svg>
+            </div>
+            <div class="footer__brand-name">
+              Ultragaz Anápolis
+              <small>Distribuidora Autorizada</small>
+            </div>
+          </div>
+          <p class="footer__brand-desc">Entrega rápida de gás de cozinha e água mineral em Anápolis – GO. Santa Maria de Nazareth.</p>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Contato</p>
+          <p class="footer__contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.22 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+556237061710" class="footer__contact-link">(62) 3706-1710</a>
+          </p>
+          <p class="footer__contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+            <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20mais%20informações.%20Pode%20me%20ajudar" class="footer__contact-link" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </p>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Endereço</p>
+          <p class="footer__contact-item" style="align-items:flex-start">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:2px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Rua Martinho Fontes, 374<br>Santa Maria de Nazareth<br>Anápolis – GO</span>
+          </p>
+          <p class="footer__contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Seg – Sab: 7h às 18h</span>
+          </p>
+        </div>
+
+      </div>
+      <hr class="footer__divider">
+      <p class="footer__copyright">© 2026 Ultragaz Anápolis. Todos os direitos reservados. Distribuidora autorizada Ultragaz.</p>
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════════════════
+       BOTÃO FLUTUANTE WHATSAPP — PREMIUM PILL
+  ══════════════════════════════════ -->
+  <div class="whatsapp-float" aria-label="Fale pelo WhatsApp">
+    <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20mais%20informações.%20Pode%20me%20ajudar"
+       class="whatsapp-float__link"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Pedir agora pelo WhatsApp">
+      <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+      <span class="whatsapp-float__pulse whatsapp-float__pulse--delay" aria-hidden="true"></span>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true" focusable="false">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/>
+      </svg>
+      <span class="whatsapp-float__text">Pedir agora</span>
+    </a>
+  </div>
+
+  <script src="js/main.js" defer></script>
+
+  <!-- JSON-LD: LocalBusiness -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Ultragaz Anápolis – Distribuidora de Gás e Água","description":"Distribuidora autorizada Ultragaz em Anápolis-GO. Entrega rápida de botijão de gás (P5, P13, P20, P45) e água mineral no mesmo dia.","image":"https://ultragaz-anapolis.com.br/img/fachada.png","url":"https://ultragaz-anapolis.com.br","telephone":"+556237061710","address":{"@type":"PostalAddress","streetAddress":"Rua Martinho Fontes, 374","addressLocality":"Anápolis","addressRegion":"GO","postalCode":"75000-000","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":"-16.325644","longitude":"-48.940027"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:00","closes":"18:00"},"priceRange":"$$","paymentAccepted":"Pix, Dinheiro, Cartão de Débito, Cartão de Crédito","areaServed":{"@type":"City","name":"Anápolis"},"hasMap":"https://maps.app.goo.gl/QLhXAScLXopmfNiL6","sameAs":["https://wa.me/556237061710"]}
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual o horário de atendimento da Ultragaz Anápolis?","acceptedAnswer":{"@type":"Answer","text":"Atendemos de segunda a sábado, das 7h às 18h."}},{"@type":"Question","name":"Quais formas de pagamento a Ultragaz Anápolis aceita?","acceptedAnswer":{"@type":"Answer","text":"Aceitamos Pix, dinheiro, cartão de débito e cartão de crédito."}},{"@type":"Question","name":"Quanto tempo demora a entrega de gás em Anápolis?","acceptedAnswer":{"@type":"Answer","text":"Trabalhamos com entrega no mesmo dia."}},{"@type":"Question","name":"Preciso devolver o botijão vazio para a Ultragaz Anápolis?","acceptedAnswer":{"@type":"Answer","text":"Sim. A troca é feita na hora da entrega."}},{"@type":"Question","name":"A Ultragaz Anápolis instala o botijão de gás?","acceptedAnswer":{"@type":"Answer","text":"Nossos entregadores auxiliam na troca do botijão seguindo as normas de segurança."}},{"@type":"Question","name":"Em qual região a Ultragaz Anápolis faz entrega?","acceptedAnswer":{"@type":"Answer","text":"Atendemos toda a cidade de Anápolis e bairros próximos."}}]}
+  </script>
+
+</body>
+</html>
