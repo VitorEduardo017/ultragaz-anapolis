@@ -20,8 +20,8 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="icon" href="img/galeria/LOGOTIPO FUND TRANSP.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/galeria/LOGOTIPO FUND TRANSP.png">
 
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,10 +52,8 @@
 
     /* HEADER */
     .header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,61,165,0.08);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 1px 20px rgba(0,61,165,0.07)}
-    .header__logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex-shrink:0}
-    .header__logo-icon{width:36px;height:36px;background:var(--grad-hero);border-radius:10px;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 10px rgba(0,61,165,0.3);flex-shrink:0}
-    .header__logo-text{font-size:.95rem;font-weight:800;color:var(--blue);line-height:1.15;letter-spacing:-.2px}
-    .header__logo-text small{display:block;font-size:.65rem;font-weight:600;color:var(--text-muted);letter-spacing:.3px}
+    .header__logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+    .header__logo-img{height:48px;width:auto;object-fit:contain;display:block}
     .header__contact{display:flex;align-items:center;gap:10px}
     .header__phone{display:none;align-items:center;gap:6px;color:var(--text-muted);font-size:.82rem;font-weight:700;text-decoration:none}
     .header__whatsapp{display:flex;align-items:center;gap:7px;background:var(--grad-green);color:var(--white);font-family:var(--font);font-size:.82rem;font-weight:800;padding:9px 18px;border-radius:var(--radius-full);text-decoration:none;box-shadow:0 3px 12px rgba(37,211,102,.3);transition:all .2s ease}
@@ -77,18 +75,33 @@
     .btn-whatsapp{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--grad-green);color:var(--white);font-family:var(--font);font-size:.95rem;font-weight:800;padding:14px 26px;border-radius:var(--radius-full);border:none;cursor:pointer;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.35);transition:transform .2s ease,box-shadow .2s ease;white-space:nowrap;letter-spacing:.2px}
     .btn-whatsapp--large{font-size:1.05rem;padding:17px 34px;gap:11px;box-shadow:0 6px 28px rgba(37,211,102,.40)}
     .hero__phone-link{color:rgba(255,255,255,.75);font-size:.88rem;font-weight:600;text-decoration:underline;text-underline-offset:3px}
-    .hero__mascote{margin-top:44px;text-align:center}
-    .hero__mascote img{max-width:170px;margin:0 auto;filter:drop-shadow(0 16px 40px rgba(0,0,0,.35))}
+    .hero__fachada{margin-top:36px;text-align:center}
+    .hero__fachada img{
+      width:100%;max-width:480px;margin:0 auto;
+      border-radius:20px;
+      box-shadow:0 20px 60px rgba(0,0,0,.55),0 0 0 3px rgba(255,255,255,.15);
+      object-fit:cover;
+      animation:heroFachadaIn .8s ease both;
+    }
+    @keyframes heroFachadaIn{
+      from{opacity:0;transform:translateY(18px) scale(.97)}
+      to{opacity:1;transform:translateY(0) scale(1)}
+    }
+    @keyframes mascoteFloat{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-14px)}
+    }
+    .mascote-float{animation:mascoteFloat 3.2s ease-in-out infinite;display:block}
     @media(min-width:768px){
       .header{padding:14px 40px}
       .header__phone{display:flex}
       #hero{padding:80px 40px 120px}
-      .hero__wrapper{display:flex;align-items:center;justify-content:space-between;gap:48px}
-      .hero__content{max-width:54%}
+      .hero__wrapper{display:flex;align-items:center;justify-content:space-between;gap:40px}
+      .hero__content{max-width:48%}
       .hero__title{font-size:3rem}
       .hero__actions{flex-direction:row;align-items:center}
-      .hero__mascote{margin-top:0;flex-shrink:0}
-      .hero__mascote img{max-width:240px}
+      .hero__fachada{margin-top:0;flex-shrink:0;width:49%}
+      .hero__fachada img{max-width:100%;height:420px}
     }
   </style>
 
@@ -103,15 +116,7 @@
   ══════════════════════════════════ -->
   <header class="header">
     <a href="#" class="header__logo" aria-label="Ultragaz Anápolis — início">
-      <div class="header__logo-icon" aria-hidden="true">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M12 2C12 2 19 8.5 19 14C19 17.866 15.866 21 12 21C8.134 21 5 17.866 5 14C5 10 8.5 7 8.5 7C8.5 7 9 10.5 12 10.5C12 10.5 9.5 8 12 2Z" fill="white"/>
-        </svg>
-      </div>
-      <div class="header__logo-text">
-        Ultragaz Anápolis
-        <small>Distribuidora Autorizada</small>
-      </div>
+      <img src="img/galeria/LOGOTIPO FUND TRANSP.png" alt="Logotipo Ultragaz Anápolis" class="header__logo-img">
     </a>
 
     <nav class="header__contact" aria-label="Contato rápido">
@@ -161,7 +166,7 @@
             </span>
             <span class="hero__trust-chip">
               <span class="hero__trust-chip-dot" aria-hidden="true"></span>
-              Seg–Sáb 7h–18h
+              Seg–Sex 8h–20h · Sáb 8h–16h
             </span>
           </div>
 
@@ -177,8 +182,8 @@
           </div>
         </div>
 
-        <div class="hero__mascote" aria-hidden="true">
-          <img src="img/mascote.png" alt="" width="200" height="260" fetchpriority="high">
+        <div class="hero__fachada">
+          <img src="img/galeria/FOTO DA FAIXADA MAIOR.png" alt="Fachada da Ultragaz Anápolis no bairro Santa Maria de Nazareth" width="800" height="560" fetchpriority="high">
         </div>
       </div>
 
@@ -381,7 +386,7 @@
           <article class="product-card product-card--featured fade-in">
             <span class="product-card__badge">Mais pedido</span>
             <div class="product-card__img-wrap">
-              <img src="img/produtos/agua-20l.png" alt="Galão de água mineral 20L Pura para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+              <img src="img/produtos/GALÃO 20L PURA.png" alt="Galão de água mineral 20L Pura para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__name">Água 20L (Pura)</h3>
@@ -393,7 +398,7 @@
 
           <article class="product-card fade-in">
             <div class="product-card__img-wrap">
-              <img src="img/produtos/agua-gas-500ml.png" alt="Água com gás 500ml para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+              <img src="img/produtos/PURA 500ML C GÁS.png" alt="Água com gás 500ml Pura para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__name">Água c/ Gás 500ml</h3>
@@ -405,7 +410,7 @@
 
           <article class="product-card fade-in">
             <div class="product-card__img-wrap">
-              <img src="img/produtos/agua-500ml.png" alt="Água sem gás 500ml para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+              <img src="img/produtos/PURA 500ML S GÁS.png" alt="Água sem gás 500ml Pura para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__name">Água s/ Gás 500ml</h3>
@@ -417,7 +422,7 @@
 
           <article class="product-card fade-in">
             <div class="product-card__img-wrap">
-              <img src="img/produtos/agua-5l.png" alt="Água sem gás 5 litros econômica para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+              <img src="img/produtos/GALÃO 5L PURA.png" alt="Água sem gás 5L Pura para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__name">Água s/ Gás 5L</h3>
@@ -456,7 +461,7 @@
 
           <article class="product-card fade-in">
             <div class="product-card__img-wrap">
-              <img src="img/produtos/REGISTRO.png" alt="Registro para gás de cozinha certificado em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+              <img src="img/produtos/RESGISTRO ALIANÇA.png" alt="Registro Aliança para gás de cozinha certificado em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__name">Registro para Gás</h3>
@@ -468,7 +473,7 @@
 
           <article class="product-card fade-in">
             <div class="product-card__img-wrap">
-              <img src="img/produtos/MANGUEIRA.png" alt="Mangueira para gás de cozinha certificada em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+              <img src="img/produtos/MANGUEIRA ALIANÇA.png" alt="Mangueira Aliança para gás de cozinha certificada em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__name">Mangueira para Gás</h3>
@@ -480,7 +485,7 @@
 
           <article class="product-card fade-in">
             <div class="product-card__img-wrap">
-              <img src="img/produtos/bombinha.png" alt="Bombinha elétrica para galão de água 20 litros em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+              <img src="img/produtos/BOMBINHA AGUA.png" alt="Bombinha elétrica para galão de água 20 litros em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__name">Bombinha Elétrica</h3>
@@ -545,15 +550,12 @@
             <div class="about__photos">
               <!-- Foto principal: fachada -->
               <div class="about__photo-main">
-                <img src="img/fachada.png" alt="Fachada da distribuidora Ultragaz no bairro Santa Maria de Nazareth em Anápolis" width="800" height="450" loading="lazy">
+                <img src="img/galeria/FOTO DA FAIXADA.png" alt="Fachada da distribuidora Ultragaz no bairro Santa Maria de Nazareth em Anápolis" width="800" height="450" loading="lazy">
                 <span class="about__photo-badge">Santa Maria de Nazareth, Anápolis – GO</span>
               </div>
-              <!-- Fotos secundárias -->
-              <div class="about__photo-sm">
-                <img src="img/galeria/veiculo.png" alt="Veículo de entrega da Ultragaz Anápolis" width="400" height="300" loading="lazy">
-              </div>
-              <div class="about__photo-sm">
-                <img src="img/galeria/equipe.png" alt="Equipe da distribuidora Ultragaz Anápolis" width="400" height="300" loading="lazy">
+              <!-- Mascote realocado e animado -->
+              <div class="about__photo-sm" style="display:flex;align-items:center;justify-content:center">
+                <img src="img/mascote.png" alt="Mascote Ultragaz" width="160" height="210" loading="lazy" class="mascote-float" style="max-height:200px;width:auto;object-fit:contain;filter:drop-shadow(0 8px 24px rgba(0,61,165,.25))">
               </div>
             </div>
           </div>
@@ -592,7 +594,7 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               <div>
                 <strong>Horário</strong><br>
-                <span>Segunda a sábado, das 7h às 18h</span>
+                <span>Seg–Sex: 8h às 20h &nbsp;|&nbsp; Sáb: 8h às 16h &nbsp;|&nbsp; Dom e feriados: 9h às 15h</span>
               </div>
             </div>
 
@@ -660,7 +662,7 @@
               <span class="faq-item__icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
             </button>
             <div class="faq-item__answer" id="faq-a1" role="region" aria-labelledby="faq-q1">
-              <div class="faq-item__answer-inner">De segunda a sábado, das 7h às 18h. Para horários atualizados, fale conosco pelo WhatsApp.</div>
+              <div class="faq-item__answer-inner">Segunda a sexta: 8h às 20h. Sábados: 8h às 16h. Domingos e feriados: 9h às 15h.</div>
             </div>
           </div>
 
@@ -731,13 +733,7 @@
 
         <div>
           <div class="footer__brand-logo">
-            <div class="footer__brand-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C12 2 19 8.5 19 14C19 17.866 15.866 21 12 21C8.134 21 5 17.866 5 14C5 10 8.5 7 8.5 7C8.5 7 9 10.5 12 10.5C12 10.5 9.5 8 12 2Z" fill="white"/></svg>
-            </div>
-            <div class="footer__brand-name">
-              Ultragaz Anápolis
-              <small>Distribuidora Autorizada</small>
-            </div>
+            <img src="img/galeria/LOGOTIPO FUND TRANSP.png" alt="Logotipo Ultragaz Anápolis" style="height:54px;width:auto;object-fit:contain">
           </div>
           <p class="footer__brand-desc">Entrega rápida de gás de cozinha e água mineral em Anápolis – GO. Santa Maria de Nazareth.</p>
         </div>
@@ -762,13 +758,14 @@
           </p>
           <p class="footer__contact-item">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <span>Seg – Sab: 7h às 18h</span>
+            <span>Seg–Sex: 8h–20h &nbsp;·&nbsp; Sáb: 8h–16h &nbsp;·&nbsp; Dom/Feriados: 9h–15h</span>
           </p>
         </div>
 
       </div>
       <hr class="footer__divider">
       <p class="footer__copyright">© 2026 Ultragaz Anápolis. Todos os direitos reservados. Distribuidora autorizada Ultragaz.</p>
+      <p class="footer__copyright" style="margin-top:6px;opacity:.6;font-size:.72rem">Criação e desenvolvimento: <a href="https://vpexsolutions.com.br" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-underline-offset:2px">VpexSolutions</a></p>
     </div>
   </footer>
 
@@ -795,12 +792,12 @@
 
   <!-- JSON-LD: LocalBusiness -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Ultragaz Anápolis – Distribuidora de Gás e Água","description":"Distribuidora autorizada Ultragaz em Anápolis-GO. Entrega rápida de botijão de gás (P5, P13, P20, P45) e água mineral no mesmo dia.","image":"https://ultragaz-anapolis.com.br/img/fachada.png","url":"https://ultragaz-anapolis.com.br","telephone":"+556237061710","address":{"@type":"PostalAddress","streetAddress":"Rua Martinho Fontes, 374","addressLocality":"Anápolis","addressRegion":"GO","postalCode":"75000-000","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":"-16.325644","longitude":"-48.940027"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:00","closes":"18:00"},"priceRange":"$$","paymentAccepted":"Pix, Dinheiro, Cartão de Débito, Cartão de Crédito","areaServed":{"@type":"City","name":"Anápolis"},"hasMap":"https://maps.app.goo.gl/QLhXAScLXopmfNiL6","sameAs":["https://wa.me/556237061710"]}
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Ultragaz Anápolis – Distribuidora de Gás e Água","description":"Distribuidora autorizada Ultragaz em Anápolis-GO. Entrega rápida de botijão de gás (P5, P13, P20, P45) e água mineral no mesmo dia.","image":"https://ultragaz-anapolis.com.br/img/fachada.png","url":"https://ultragaz-anapolis.com.br","telephone":"+556237061710","address":{"@type":"PostalAddress","streetAddress":"Rua Martinho Fontes, 374","addressLocality":"Anápolis","addressRegion":"GO","postalCode":"75000-000","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":"-16.325644","longitude":"-48.940027"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"08:00","closes":"16:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"09:00","closes":"15:00"}],"priceRange":"$$","paymentAccepted":"Pix, Dinheiro, Cartão de Débito, Cartão de Crédito","areaServed":{"@type":"City","name":"Anápolis"},"hasMap":"https://maps.app.goo.gl/QLhXAScLXopmfNiL6","sameAs":["https://wa.me/556237061710"]}
   </script>
 
   <!-- JSON-LD: FAQPage -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual o horário de atendimento da Ultragaz Anápolis?","acceptedAnswer":{"@type":"Answer","text":"Atendemos de segunda a sábado, das 7h às 18h."}},{"@type":"Question","name":"Quais formas de pagamento a Ultragaz Anápolis aceita?","acceptedAnswer":{"@type":"Answer","text":"Aceitamos Pix, dinheiro, cartão de débito e cartão de crédito."}},{"@type":"Question","name":"Quanto tempo demora a entrega de gás em Anápolis?","acceptedAnswer":{"@type":"Answer","text":"Trabalhamos com entrega no mesmo dia."}},{"@type":"Question","name":"Preciso devolver o botijão vazio para a Ultragaz Anápolis?","acceptedAnswer":{"@type":"Answer","text":"Sim. A troca é feita na hora da entrega."}},{"@type":"Question","name":"A Ultragaz Anápolis instala o botijão de gás?","acceptedAnswer":{"@type":"Answer","text":"Nossos entregadores auxiliam na troca do botijão seguindo as normas de segurança."}},{"@type":"Question","name":"Em qual região a Ultragaz Anápolis faz entrega?","acceptedAnswer":{"@type":"Answer","text":"Atendemos toda a cidade de Anápolis e bairros próximos."}}]}
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual o horário de atendimento da Ultragaz Anápolis?","acceptedAnswer":{"@type":"Answer","text":"Segunda a sexta: 8h às 20h. Sábados: 8h às 16h. Domingos e feriados: 9h às 15h."}},{"@type":"Question","name":"Quais formas de pagamento a Ultragaz Anápolis aceita?","acceptedAnswer":{"@type":"Answer","text":"Aceitamos Pix, dinheiro, cartão de débito e cartão de crédito."}},{"@type":"Question","name":"Quanto tempo demora a entrega de gás em Anápolis?","acceptedAnswer":{"@type":"Answer","text":"Trabalhamos com entrega no mesmo dia."}},{"@type":"Question","name":"Preciso devolver o botijão vazio para a Ultragaz Anápolis?","acceptedAnswer":{"@type":"Answer","text":"Sim. A troca é feita na hora da entrega."}},{"@type":"Question","name":"A Ultragaz Anápolis instala o botijão de gás?","acceptedAnswer":{"@type":"Answer","text":"Nossos entregadores auxiliam na troca do botijão seguindo as normas de segurança."}},{"@type":"Question","name":"Em qual região a Ultragaz Anápolis faz entrega?","acceptedAnswer":{"@type":"Answer","text":"Atendemos toda a cidade de Anápolis e bairros próximos."}}]}
   </script>
 
 </body>
