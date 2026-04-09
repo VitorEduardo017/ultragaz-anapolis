@@ -53,7 +53,7 @@
     /* HEADER */
     .header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,61,165,0.08);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 1px 20px rgba(0,61,165,0.07)}
     .header__logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
-    .header__logo-img{height:48px;width:auto;object-fit:contain;display:block}
+    .header__logo-img{height:72px;width:auto;object-fit:contain;display:block}
     .header__contact{display:flex;align-items:center;gap:10px}
     .header__phone{display:none;align-items:center;gap:6px;color:var(--text-muted);font-size:.82rem;font-weight:700;text-decoration:none}
     .header__whatsapp{display:flex;align-items:center;gap:7px;background:var(--grad-green);color:var(--white);font-family:var(--font);font-size:.82rem;font-weight:800;padding:9px 18px;border-radius:var(--radius-full);text-decoration:none;box-shadow:0 3px 12px rgba(37,211,102,.3);transition:all .2s ease}
@@ -92,8 +92,11 @@
       50%{transform:translateY(-14px)}
     }
     .mascote-float{animation:mascoteFloat 3.2s ease-in-out infinite;display:block}
+    /* Distribuidora destaque */
+    .hero__distribuidora-destaque{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.40);color:#fff;font-size:1.05rem;font-weight:900;padding:10px 22px;border-radius:var(--radius-full);letter-spacing:.5px;text-transform:uppercase;margin-bottom:22px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 4px 18px rgba(0,0,0,.18)}
     @media(min-width:768px){
       .header{padding:14px 40px}
+      .header__logo-img{height:88px}
       .header__phone{display:flex}
       #hero{padding:80px 40px 120px}
       .hero__wrapper{display:flex;align-items:center;justify-content:space-between;gap:40px}
@@ -102,6 +105,7 @@
       .hero__actions{flex-direction:row;align-items:center}
       .hero__fachada{margin-top:0;flex-shrink:0;width:49%}
       .hero__fachada img{max-width:100%;height:420px}
+      .hero__distribuidora-destaque{font-size:1.2rem;padding:12px 28px}
     }
   </style>
 
@@ -141,28 +145,27 @@
       <div class="hero__glow" aria-hidden="true"></div>
       <div class="hero__wrapper">
         <div class="hero__content">
-          <span class="hero__badge">
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="#25D366" aria-hidden="true"><circle cx="5" cy="5" r="5"/></svg>
-            Distribuidora Autorizada Ultragaz
-          </span>
+          <div class="hero__distribuidora-destaque" aria-label="Distribuidora Ultragaz Autorizada">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            Distribuidora Ultragaz Autorizada
+          </div>
 
           <h1 class="hero__title" id="hero-title">
-            Seu gás e sua água,
-            <strong>entregues rápido em Anápolis</strong>
+            <strong>Seu gás e água<br>entregue rápido em Anápolis</strong>
           </h1>
 
           <p class="hero__subtitle">
-            Distribuidora Ultragaz no bairro Santa Maria de Nazareth. Entrega no mesmo dia, atendimento pelo WhatsApp.
+            Distribuidora Ultragaz no bairro Vila Santa Maria de Nazareth. Entrega rápida, atendimento pelo WhatsApp.
           </p>
 
           <div class="hero__trust-row" aria-label="Diferenciais">
             <span class="hero__trust-chip">
               <span class="hero__trust-chip-dot" aria-hidden="true"></span>
-              Produto original
+              Produto de qualidade
             </span>
             <span class="hero__trust-chip">
               <span class="hero__trust-chip-dot" aria-hidden="true"></span>
-              Entrega no mesmo dia
+              Entrega rápida
             </span>
             <span class="hero__trust-chip">
               <span class="hero__trust-chip-dot" aria-hidden="true"></span>
@@ -216,7 +219,7 @@
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
             </div>
             <h3 class="benefit-item__title">Entrega rápida</h3>
-            <p class="benefit-item__text">Receba no mesmo dia, direto na sua porta.</p>
+            <p class="benefit-item__text">Entrega rápida direto na sua porta.</p>
           </div>
 
           <div class="benefit-item fade-in">
@@ -224,7 +227,7 @@
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
             </div>
             <h3 class="benefit-item__title">Distribuidora autorizada</h3>
-            <p class="benefit-item__text">Produto original Ultragaz com garantia de segurança.</p>
+            <p class="benefit-item__text">Produto de qualidade Ultragaz com garantia de segurança.</p>
           </div>
 
           <div class="benefit-item fade-in">
@@ -506,7 +509,7 @@
     <section id="sobre" class="section section--soft" aria-labelledby="sobre-title">
       <div class="container">
 
-        <p class="visually-hidden">A Ultragaz Anápolis é uma distribuidora autorizada de gás de cozinha e água mineral localizada na Rua Martinho Fontes, 374, bairro Santa Maria de Nazareth, em Anápolis – GO. Atende de segunda a sábado com entrega rápida de botijões P5, P13, P20 e P45, além de galões de água mineral 20 litros e acessórios para gás.</p>
+        <p class="visually-hidden">A Ultragaz Anápolis é uma distribuidora autorizada de gás de cozinha e água mineral localizada na Rua Martinho Fontes, 374, Vila Santa Maria de Nazareth, em Anápolis – GO. Atende de segunda a sábado com entrega rápida de botijões P5, P13, P20 e P45, além de galões de água mineral 20 litros e acessórios para gás.</p>
 
         <div class="about__inner">
 
@@ -518,7 +521,7 @@
             <h2 class="section__title" id="sobre-title">Conheça a Ultragaz Anápolis</h2>
 
             <p class="about__lead">
-              Somos uma distribuidora autorizada Ultragaz no bairro Santa Maria de Nazareth, em Anápolis – GO.
+              Somos uma distribuidora autorizada Ultragaz no bairro Vila Santa Maria de Nazareth, em Anápolis – GO.
             </p>
             <p class="about__body">
               Atendemos famílias, comércios e empresas com entrega rápida de gás de cozinha e água mineral. Nossa equipe é treinada para garantir segurança em cada entrega, e nosso compromisso é com a pontualidade e o respeito que você merece.
@@ -551,7 +554,7 @@
               <!-- Foto principal: fachada -->
               <div class="about__photo-main">
                 <img src="img/galeria/FOTO DA FAIXADA.png" alt="Fachada da distribuidora Ultragaz no bairro Santa Maria de Nazareth em Anápolis" width="800" height="450" loading="lazy">
-                <span class="about__photo-badge">Santa Maria de Nazareth, Anápolis – GO</span>
+                <span class="about__photo-badge">Vila Santa Maria de Nazareth, Anápolis – GO</span>
               </div>
               <!-- Mascote realocado e animado -->
               <div class="about__photo-sm" style="display:flex;align-items:center;justify-content:center">
@@ -582,18 +585,18 @@
         <div class="location__wrapper">
           <div class="location__info-wrap">
 
-            <div class="location__address-item">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div class="location__address-item location__address-item--highlight">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
               <div>
-                <strong>Endereço</strong><br>
-                <span>Rua Martinho Fontes, 374 – Santa Maria de Nazareth – Anápolis – GO</span>
+                <strong>Localização</strong><br>
+                <span>Rua Martinho Fontes, 374<br>Vila Santa Maria de Nazareth – Anápolis – GO</span>
               </div>
             </div>
 
-            <div class="location__address-item">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div class="location__address-item location__address-item--highlight">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               <div>
-                <strong>Horário</strong><br>
+                <strong>Horário de atendimento</strong><br>
                 <span>Seg–Sex: 8h às 20h &nbsp;|&nbsp; Sáb: 8h às 16h &nbsp;|&nbsp; Dom e feriados: 9h às 15h</span>
               </div>
             </div>
@@ -682,7 +685,7 @@
               <span class="faq-item__icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
             </button>
             <div class="faq-item__answer" id="faq-a3" role="region" aria-labelledby="faq-q3">
-              <div class="faq-item__answer-inner">Trabalhamos com entrega no <strong>mesmo dia</strong>. Após o pedido, informamos o tempo estimado pelo WhatsApp.</div>
+              <div class="faq-item__answer-inner">Trabalhamos com <strong>entrega rápida</strong>. Após o pedido, informamos o tempo estimado pelo WhatsApp.</div>
             </div>
           </div>
 
@@ -733,9 +736,9 @@
 
         <div>
           <div class="footer__brand-logo">
-            <img src="img/galeria/LOGOTIPO FUND TRANSP.png" alt="Logotipo Ultragaz Anápolis" style="height:54px;width:auto;object-fit:contain">
+            <img src="img/galeria/LOGOTIPO FUND TRANSP.png" alt="Logotipo Ultragaz Anápolis" style="height:130px;width:auto;object-fit:contain">
           </div>
-          <p class="footer__brand-desc">Entrega rápida de gás de cozinha e água mineral em Anápolis – GO. Santa Maria de Nazareth.</p>
+          <p class="footer__brand-desc">Entrega rápida de gás de cozinha e água mineral em Anápolis – GO. Vila Santa Maria de Nazareth.</p>
         </div>
 
         <div>
@@ -754,7 +757,7 @@
           <p class="footer__col-title">Endereço</p>
           <p class="footer__contact-item" style="align-items:flex-start">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:2px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Rua Martinho Fontes, 374<br>Santa Maria de Nazareth<br>Anápolis – GO</span>
+            <span>Rua Martinho Fontes, 374<br>Vila Santa Maria de Nazareth<br>Anápolis – GO</span>
           </p>
           <p class="footer__contact-item">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -792,12 +795,12 @@
 
   <!-- JSON-LD: LocalBusiness -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Ultragaz Anápolis – Distribuidora de Gás e Água","description":"Distribuidora autorizada Ultragaz em Anápolis-GO. Entrega rápida de botijão de gás (P5, P13, P20, P45) e água mineral no mesmo dia.","image":"https://ultragaz-anapolis.com.br/img/fachada.png","url":"https://ultragaz-anapolis.com.br","telephone":"+556237061710","address":{"@type":"PostalAddress","streetAddress":"Rua Martinho Fontes, 374","addressLocality":"Anápolis","addressRegion":"GO","postalCode":"75000-000","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":"-16.325644","longitude":"-48.940027"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"08:00","closes":"16:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"09:00","closes":"15:00"}],"priceRange":"$$","paymentAccepted":"Pix, Dinheiro, Cartão de Débito, Cartão de Crédito","areaServed":{"@type":"City","name":"Anápolis"},"hasMap":"https://maps.app.goo.gl/QLhXAScLXopmfNiL6","sameAs":["https://wa.me/556237061710"]}
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Ultragaz Anápolis – Distribuidora de Gás e Água","description":"Distribuidora autorizada Ultragaz em Anápolis-GO. Entrega rápida de botijão de gás (P5, P13, P20, P45) e água mineral em Anápolis.","image":"https://ultragaz-anapolis.com.br/img/fachada.png","url":"https://ultragaz-anapolis.com.br","telephone":"+556237061710","address":{"@type":"PostalAddress","streetAddress":"Rua Martinho Fontes, 374","addressLocality":"Anápolis","addressRegion":"GO","postalCode":"75000-000","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":"-16.325644","longitude":"-48.940027"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"08:00","closes":"16:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"09:00","closes":"15:00"}],"priceRange":"$$","paymentAccepted":"Pix, Dinheiro, Cartão de Débito, Cartão de Crédito","areaServed":{"@type":"City","name":"Anápolis"},"hasMap":"https://maps.app.goo.gl/QLhXAScLXopmfNiL6","sameAs":["https://wa.me/556237061710"]}
   </script>
 
   <!-- JSON-LD: FAQPage -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual o horário de atendimento da Ultragaz Anápolis?","acceptedAnswer":{"@type":"Answer","text":"Segunda a sexta: 8h às 20h. Sábados: 8h às 16h. Domingos e feriados: 9h às 15h."}},{"@type":"Question","name":"Quais formas de pagamento a Ultragaz Anápolis aceita?","acceptedAnswer":{"@type":"Answer","text":"Aceitamos Pix, dinheiro, cartão de débito e cartão de crédito."}},{"@type":"Question","name":"Quanto tempo demora a entrega de gás em Anápolis?","acceptedAnswer":{"@type":"Answer","text":"Trabalhamos com entrega no mesmo dia."}},{"@type":"Question","name":"Preciso devolver o botijão vazio para a Ultragaz Anápolis?","acceptedAnswer":{"@type":"Answer","text":"Sim. A troca é feita na hora da entrega."}},{"@type":"Question","name":"A Ultragaz Anápolis instala o botijão de gás?","acceptedAnswer":{"@type":"Answer","text":"Nossos entregadores auxiliam na troca do botijão seguindo as normas de segurança."}},{"@type":"Question","name":"Em qual região a Ultragaz Anápolis faz entrega?","acceptedAnswer":{"@type":"Answer","text":"Atendemos toda a cidade de Anápolis e bairros próximos."}}]}
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual o horário de atendimento da Ultragaz Anápolis?","acceptedAnswer":{"@type":"Answer","text":"Segunda a sexta: 8h às 20h. Sábados: 8h às 16h. Domingos e feriados: 9h às 15h."}},{"@type":"Question","name":"Quais formas de pagamento a Ultragaz Anápolis aceita?","acceptedAnswer":{"@type":"Answer","text":"Aceitamos Pix, dinheiro, cartão de débito e cartão de crédito."}},{"@type":"Question","name":"Quanto tempo demora a entrega de gás em Anápolis?","acceptedAnswer":{"@type":"Answer","text":"Trabalhamos com entrega rápida."}},{"@type":"Question","name":"Preciso devolver o botijão vazio para a Ultragaz Anápolis?","acceptedAnswer":{"@type":"Answer","text":"Sim. A troca é feita na hora da entrega."}},{"@type":"Question","name":"A Ultragaz Anápolis instala o botijão de gás?","acceptedAnswer":{"@type":"Answer","text":"Nossos entregadores auxiliam na troca do botijão seguindo as normas de segurança."}},{"@type":"Question","name":"Em qual região a Ultragaz Anápolis faz entrega?","acceptedAnswer":{"@type":"Answer","text":"Atendemos toda a cidade de Anápolis e bairros próximos."}}]}
   </script>
 
 </body>

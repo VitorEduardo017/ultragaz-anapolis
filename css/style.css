@@ -828,6 +828,32 @@ button { font-family: var(--font); }
 }
 .location__address-item a:hover { color: var(--blue); }
 
+/* Destaque especial para localização e horário */
+.location__address-item--highlight {
+  background: var(--blue-light);
+  border: 2px solid var(--blue);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  box-shadow: 0 4px 16px rgba(0,61,165,0.10);
+}
+.location__address-item--highlight strong {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--blue);
+  display: block;
+  margin-bottom: 4px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+.location__address-item--highlight span {
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.6;
+}
+
 .location__detail {
   font-size: 0.88rem;
   color: var(--text-muted);
