@@ -20,8 +20,8 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
-  <link rel="icon" href="img/galeria/LOGOTIPO FUND TRANSP.png" type="image/png">
-  <link rel="apple-touch-icon" href="img/galeria/LOGOTIPO FUND TRANSP.png">
+  <link rel="icon" href="img/galeria/logotipo - v2 - ultragaz - sem logotipo .png" type="image/png">
+  <link rel="apple-touch-icon" href="img/galeria/logotipo - v2 - ultragaz - sem logotipo .png">
 
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,12 +51,10 @@
     .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
     /* HEADER */
-    .header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,61,165,0.08);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 1px 20px rgba(0,61,165,0.07)}
-    .header__logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
-    .header__logo-img{height:72px;width:auto;object-fit:contain;display:block}
-    .header__contact{display:flex;align-items:center;gap:10px}
-    .header__phone{display:none;align-items:center;gap:6px;color:var(--text-muted);font-size:.82rem;font-weight:700;text-decoration:none}
-    .header__whatsapp{display:flex;align-items:center;gap:7px;background:var(--grad-green);color:var(--white);font-family:var(--font);font-size:.82rem;font-weight:800;padding:9px 18px;border-radius:var(--radius-full);text-decoration:none;box-shadow:0 3px 12px rgba(37,211,102,.3);transition:all .2s ease}
+    .header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,61,165,0.08);padding:16px 20px;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 20px rgba(0,61,165,0.07)}
+    .header__logo{display:flex;align-items:center;justify-content:center;text-decoration:none;width:100%}
+    .header__logo-img{height:110px;width:auto;object-fit:contain;display:block;margin:0 auto}
+    .header__contact{display:none}
 
     /* HERO */
     #hero{background:var(--grad-hero);color:var(--white);padding:56px 20px 100px;position:relative;overflow:hidden}
@@ -96,8 +94,7 @@
     .hero__distribuidora-destaque{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.40);color:#fff;font-size:1.05rem;font-weight:900;padding:10px 22px;border-radius:var(--radius-full);letter-spacing:.5px;text-transform:uppercase;margin-bottom:22px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 4px 18px rgba(0,0,0,.18)}
     @media(min-width:768px){
       .header{padding:14px 40px}
-      .header__logo-img{height:88px}
-      .header__phone{display:flex}
+      .header__logo-img{height:140px}
       #hero{padding:80px 40px 120px}
       .hero__wrapper{display:flex;align-items:center;justify-content:space-between;gap:40px}
       .hero__content{max-width:48%}
@@ -120,20 +117,9 @@
   ══════════════════════════════════ -->
   <header class="header">
     <a href="#" class="header__logo" aria-label="Ultragaz Anápolis — início">
-      <img src="img/galeria/LOGOTIPO FUND TRANSP.png" alt="Logotipo Ultragaz Anápolis" class="header__logo-img">
+      <img src="img/galeria/logotipo - v2 - ultragaz - sem logotipo .png" alt="Logotipo Ultragaz Anápolis" class="header__logo-img">
     </a>
 
-    <nav class="header__contact" aria-label="Contato rápido">
-      <a href="tel:+556237061710" class="header__phone" aria-label="Ligar agora">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.22 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        (62) 3706-1710
-      </a>
-      <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20mais%20informações.%20Pode%20me%20ajudar"
-         class="header__whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
-        WhatsApp
-      </a>
-    </nav>
   </header>
 
   <main id="conteudo-principal">
@@ -145,14 +131,11 @@
       <div class="hero__glow" aria-hidden="true"></div>
       <div class="hero__wrapper">
         <div class="hero__content">
-          <div class="hero__distribuidora-destaque" aria-label="Distribuidora Ultragaz Autorizada">
+          <div class="hero__distribuidora-destaque" aria-label="Distribuidora autorizada ultragaz">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
-            Distribuidora Ultragaz Autorizada
+            Distribuidora autorizada ultragaz
           </div>
 
-          <h1 class="hero__title" id="hero-title">
-            <strong>Seu gás e água<br>entregue rápido em Anápolis</strong>
-          </h1>
 
           <p class="hero__subtitle">
             Distribuidora Ultragaz no bairro Vila Santa Maria de Nazareth. Entrega rápida, atendimento pelo WhatsApp.
@@ -161,11 +144,7 @@
           <div class="hero__trust-row" aria-label="Diferenciais">
             <span class="hero__trust-chip">
               <span class="hero__trust-chip-dot" aria-hidden="true"></span>
-              Produto de qualidade
-            </span>
-            <span class="hero__trust-chip">
-              <span class="hero__trust-chip-dot" aria-hidden="true"></span>
-              Entrega rápida
+              Procedência garantida
             </span>
             <span class="hero__trust-chip">
               <span class="hero__trust-chip-dot" aria-hidden="true"></span>
@@ -181,7 +160,6 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
               Pedir Agora no WhatsApp
             </a>
-            <a href="tel:+556237061710" class="hero__phone-link">Ou ligue: (62) 3706-1710</a>
           </div>
         </div>
 
@@ -200,17 +178,15 @@
 
 
     <!-- ══════════════════════════════════
-         BENEFÍCIOS
+         SEÇÃO 2 — PRODUTOS
     ══════════════════════════════════ -->
-    <section id="beneficios" class="section section--soft" aria-labelledby="beneficios-title">
+    <section id="produtos" class="section section--soft" aria-labelledby="produtos-title">
       <div class="container">
-        <div style="text-align:center">
-          <span class="section__eyebrow" aria-hidden="true">
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="#003DA5"><circle cx="5" cy="5" r="5"/></svg>
-            Por que a gente?
-          </span>
-          <h2 class="section__title section__title--center" id="beneficios-title">Por que pedir com a gente?</h2>
-          <p class="section__subtitle">Simplicidade, segurança e velocidade — para você não precisar sair de casa.</p>
+
+        <!-- BENEFÍCIOS -->
+        <div style="text-align:center;margin-bottom:40px">
+          <h2 class="section__title section__title--center" id="produtos-title">Por que pedir com a gente?</h2>
+          <p class="section__subtitle">Simplicidade, segurança e Rapidez — para você não precisar sair de casa.</p>
         </div>
 
         <div class="benefits-grid">
@@ -227,7 +203,7 @@
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
             </div>
             <h3 class="benefit-item__title">Distribuidora autorizada</h3>
-            <p class="benefit-item__text">Produto de qualidade Ultragaz com garantia de segurança.</p>
+            <p class="benefit-item__text">Produto e qualidade Ultragaz com garantia e segurança.</p>
           </div>
 
           <div class="benefit-item fade-in">
@@ -259,31 +235,18 @@
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
             </div>
             <h3 class="benefit-item__title">Confiança do bairro</h3>
-            <p class="benefit-item__text">Anos atendendo famílias em Anápolis com pontualidade.</p>
+            <p class="benefit-item__text">Anos atendendo família Anapolinas</p>
           </div>
         </div>
       </div>
 
-      <div class="wave-bottom" aria-hidden="true">
-        <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,25 C480,50 960,0 1440,25 L1440,50 L0,50 Z" fill="#ffffff"/>
-        </svg>
-      </div>
-    </section>
-
-
-    <!-- ══════════════════════════════════
-         PRODUTOS: GÁS
-    ══════════════════════════════════ -->
-    <section id="gas" class="section section--white" aria-labelledby="gas-title">
-      <div class="container">
-        <div style="text-align:center">
+        <!-- SUB-SEÇÃO: GÁS GLP -->
+        <div style="margin-top:56px;text-align:center">
           <span class="section__eyebrow">
             <svg width="10" height="10" viewBox="0 0 10 10" fill="#003DA5"><circle cx="5" cy="5" r="5"/></svg>
-            Gás de cozinha
+            Gás GLP
           </span>
-          <h2 class="section__title section__title--center" id="gas-title">Botijões de Gás</h2>
-          <p class="section__subtitle">Do P5 ao P45 — encontre o tamanho ideal para sua casa ou negócio.</p>
+          <p class="section__subtitle">Escolha o tamanho ideal para sua necessidade.</p>
         </div>
 
         <div class="products-grid">
@@ -294,7 +257,7 @@
             </div>
             <div class="product-card__body">
               <h3 class="product-card__name">Botijão P5</h3>
-              <p class="product-card__desc">Ideal para apartamentos e uso rápido. Leve e prático.</p>
+              <p class="product-card__desc">Ideal para Apartamento, Camping, pescaria entre outros.</p>
               <span class="product-card__price-badge">
                 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                 Consulte o valor
@@ -333,7 +296,7 @@
             </div>
             <div class="product-card__body">
               <h3 class="product-card__name">Botijão P20</h3>
-              <p class="product-card__desc">Perfeito para comércios e quem consome mais. Maior autonomia.</p>
+              <p class="product-card__desc">Específico para empilhadeiras.</p>
               <span class="product-card__price-badge">
                 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                 Consulte o valor
@@ -352,7 +315,7 @@
             </div>
             <div class="product-card__body">
               <h3 class="product-card__name">Botijão P45</h3>
-              <p class="product-card__desc">Para indústrias, restaurantes e alto consumo. Rendimento máximo.</p>
+              <p class="product-card__desc">Para indústrias, restaurantes, condomínios entre outros que utilizam alto consumo.</p>
               <span class="product-card__price-badge">
                 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                 Consulte o valor
@@ -366,98 +329,90 @@
           </article>
 
         </div>
-      </div>
-    </section>
 
-
-    <!-- ══════════════════════════════════
-         PRODUTOS: ÁGUA
-    ══════════════════════════════════ -->
-    <section id="agua" class="section section--soft" aria-labelledby="agua-title">
-      <div class="container">
-        <div style="text-align:center">
+        <!-- SUB-SEÇÃO: ÁGUA MINERAL -->
+        <div style="margin-top:56px;text-align:center">
           <span class="section__eyebrow">
             <svg width="10" height="10" viewBox="0 0 10 10" fill="#003DA5"><circle cx="5" cy="5" r="5"/></svg>
-            Água mineral
+            Água Mineral
           </span>
-          <h2 class="section__title section__title--center" id="agua-title">Água Mineral</h2>
-          <p class="section__subtitle">Fresca e entregue na sua casa junto com o gás.</p>
+          <h2 class="section__title section__title--center" style="margin-bottom:8px">Água Mineral Pura</h2>
         </div>
 
         <div class="products-grid products-grid--agua">
 
+          <!-- 1. 20L -->
           <article class="product-card product-card--featured fade-in">
             <span class="product-card__badge">Mais pedido</span>
             <div class="product-card__img-wrap">
               <img src="img/produtos/GALÃO 20L PURA.png" alt="Galão de água mineral 20L Pura para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
             </div>
             <div class="product-card__body">
-              <h3 class="product-card__name">Água 20L (Pura)</h3>
+              <h3 class="product-card__name">Água 20L</h3>
               <p class="product-card__desc">Galão para toda a família. Hidratação garantida por dias.</p>
               <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
               <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20pedir%20um%20Galão%20de%20Água%2020L%20Pura." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Pedir Galão 20L pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
             </div>
           </article>
 
+          <!-- 2. 5L -->
           <article class="product-card fade-in">
             <div class="product-card__img-wrap">
-              <img src="img/produtos/PURA 500ML C GÁS.png" alt="Água com gás 500ml Pura para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+              <img src="img/produtos/galao de agua pura 5L.jpeg" alt="Galão de água pura 5L para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
             </div>
             <div class="product-card__body">
-              <h3 class="product-card__name">Água c/ Gás 500ml</h3>
-              <p class="product-card__desc">Refrescância com gás. Prática para levar a qualquer lugar.</p>
-              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
-              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20pedir%20Água%20com%20Gás%20500ml." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Pedir Água com Gás 500ml pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
-            </div>
-          </article>
-
-          <article class="product-card fade-in">
-            <div class="product-card__img-wrap">
-              <img src="img/produtos/PURA 500ML S GÁS.png" alt="Água sem gás 500ml Pura para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
-            </div>
-            <div class="product-card__body">
-              <h3 class="product-card__name">Água s/ Gás 500ml</h3>
-              <p class="product-card__desc">Para o dia a dia, leve e prática. Ideal para a bolsa.</p>
-              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
-              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20pedir%20Água%20sem%20Gás%20500ml." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Pedir Água sem Gás 500ml pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
-            </div>
-          </article>
-
-          <article class="product-card fade-in">
-            <div class="product-card__img-wrap">
-              <img src="img/produtos/GALÃO 5L PURA.png" alt="Água sem gás 5L Pura para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
-            </div>
-            <div class="product-card__body">
-              <h3 class="product-card__name">Água s/ Gás 5L</h3>
+              <h3 class="product-card__name">Água 5L</h3>
               <p class="product-card__desc">Econômica e prática para casa ou escritório.</p>
               <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
-              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20pedir%20Água%20sem%20Gás%205L." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Pedir Água 5L pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20pedir%20Água%205L." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Pedir Água 5L pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 3. 1,5L fardo -->
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/fardo agua cristalina 1,5L.jpeg" alt="Fardo água cristalina 1,5L para entrega em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Água 1,5L — Fardo</h3>
+              <p class="product-card__desc">Prática para o dia a dia. Ideal para casa, trabalho e eventos.</p>
+              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20pedir%20Água%201,5L%20Fardo." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Pedir Água 1,5L Fardo pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 4. 500ml s/ gás fardo -->
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/pura agua mineral 500ml.jpeg" alt="Água mineral pura 500ml sem gás fardo em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Água s/ Gás 500ml — Fardo</h3>
+              <p class="product-card__desc">Para o dia a dia, leve e prática. Ideal para a bolsa.</p>
+              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20pedir%20Água%20sem%20Gás%20500ml%20Fardo." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Pedir Água sem Gás 500ml Fardo pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 5. 500ml c/ gás fardo — último -->
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/pura agua mineral 500ml.jpeg" alt="Água mineral pura 500ml com gás fardo em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Água c/ Gás 500ml — Fardo</h3>
+              <p class="product-card__desc">Refrescância com gás. Prática para levar a qualquer lugar.</p>
+              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20pedir%20Água%20com%20Gás%20500ml%20Fardo." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Pedir Água com Gás 500ml Fardo pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
             </div>
           </article>
 
         </div>
       </div>
 
-      <div class="wave-bottom" aria-hidden="true">
-        <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,0 C360,50 1080,0 1440,40 L1440,50 L0,50 Z" fill="#ffffff"/>
-        </svg>
-      </div>
-    </section>
-
-
-    <!-- ══════════════════════════════════
-         ACESSÓRIOS
-    ══════════════════════════════════ -->
-    <section id="acessorios" class="section section--white" aria-labelledby="acessorios-title">
-      <div class="container">
-        <div style="text-align:center">
-          <span class="section__eyebrow">
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="#003DA5"><circle cx="5" cy="5" r="5"/></svg>
-            Acessórios
-          </span>
-          <h2 class="section__title section__title--center" id="acessorios-title">Acessórios para Gás e Água</h2>
-          <p class="section__subtitle">Complete sua instalação com segurança e qualidade certificada.</p>
+        <!-- SUB-SEÇÃO: ACESSÓRIOS -->
+        <div style="margin-top:56px;text-align:center">
+          <h2 class="section__title section__title--center" style="margin-bottom:8px;font-size:2rem">Acessórios</h2>
         </div>
 
         <div class="products-grid products-grid--acessorios">
@@ -467,7 +422,7 @@
               <img src="img/produtos/RESGISTRO ALIANÇA.png" alt="Registro Aliança para gás de cozinha certificado em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
             </div>
             <div class="product-card__body">
-              <h3 class="product-card__name">Registro para Gás</h3>
+              <h3 class="product-card__name">Registro Aliança</h3>
               <p class="product-card__desc">Segurança na sua cozinha. Troque regularmente para prevenir acidentes.</p>
               <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
               <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20comprar%20um%20Registro%20para%20Gás." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Comprar Registro para Gás pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
@@ -476,7 +431,7 @@
 
           <article class="product-card fade-in">
             <div class="product-card__img-wrap">
-              <img src="img/produtos/MANGUEIRA ALIANÇA.png" alt="Mangueira Aliança para gás de cozinha certificada em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+              <img src="img/produtos/Mangueira para gás.jpeg" alt="Mangueira para gás certificada em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
             </div>
             <div class="product-card__body">
               <h3 class="product-card__name">Mangueira para Gás</h3>
@@ -488,25 +443,86 @@
 
           <article class="product-card fade-in">
             <div class="product-card__img-wrap">
-              <img src="img/produtos/BOMBINHA AGUA.png" alt="Bombinha elétrica para galão de água 20 litros em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+              <img src="img/produtos/bombinha agua manual.jpeg" alt="Bombinha manual para galão de água 20 litros em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
             </div>
             <div class="product-card__body">
-              <h3 class="product-card__name">Bombinha Elétrica</h3>
+              <h3 class="product-card__name">Bombinha Manual</h3>
               <p class="product-card__desc">Água na medida certa, sem esforço. Funciona com galão 20L.</p>
               <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
               <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20comprar%20uma%20Bombinha%20Elétrica." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Comprar Bombinha pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
             </div>
           </article>
 
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/regulador para gás 505_01.png" alt="Registro Aliança 505 para gás em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Registro Aliança 505</h3>
+              <p class="product-card__desc">Segurança e qualidade certificada para sua instalação de gás.</p>
+              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20comprar%20o%20Registro%20Aliança%20505." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Comprar Registro Aliança 505 pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/registro para gás 504_1.jpeg" alt="Registro Aliança 504 para gás em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Registro Aliança 504</h3>
+              <p class="product-card__desc">Segurança e qualidade certificada para sua instalação de gás.</p>
+              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20comprar%20o%20Registro%20Aliança%20504." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Comprar Registro Aliança 504 pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/registro de gás 506_1.png" alt="Registro Aliança 506 para gás em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Registro Aliança 506</h3>
+              <p class="product-card__desc">Segurança e qualidade certificada para sua instalação de gás.</p>
+              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20comprar%20o%20Registro%20Aliança%20506." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Comprar Registro Aliança 506 pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/abraçadeiras.jpeg" alt="Abraçadeiras para gás em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Abraçadeiras</h3>
+              <p class="product-card__desc">Fixação segura para mangueiras de gás. Item essencial na instalação.</p>
+              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20comprar%20Abraçadeiras." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Comprar Abraçadeiras pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="product-card fade-in">
+            <div class="product-card__img-wrap">
+              <img src="img/produtos/Pig tail. mangueira para P45.jpeg" alt="Pig tail — mangueira para botijão P45 em Anápolis-GO" width="280" height="280" loading="lazy" class="product-card__img">
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">Pig Tail — Mangueira P45</h3>
+              <p class="product-card__desc">Mangueira específica para botijão P45. Alta resistência e segurança.</p>
+              <span class="product-card__price-badge"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Consulte o valor</span>
+              <a href="https://wa.me/556237061710?text=Olá,%20vim%20pelo%20site%20e%20quero%20comprar%20o%20Pig%20Tail%20Mangueira%20P45." class="btn-whatsapp btn-whatsapp--card" target="_blank" rel="noopener noreferrer" aria-label="Comprar Pig Tail P45 pelo WhatsApp"><svg width="14" height="14" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.093.542 4.11 1.57 5.875L.057 23.48a.5.5 0 00.607.606l5.66-1.505A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.817 9.817 0 01-5.003-1.373l-.359-.214-3.72.99 1.002-3.634-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>Pedir no WhatsApp</a>
+            </div>
+          </article>
+
         </div>
+
       </div>
     </section>
 
 
     <!-- ══════════════════════════════════
-         SOBRE / CONFIANÇA
+         SEÇÃO 3 — SOBRE & CONTATO
     ══════════════════════════════════ -->
-    <section id="sobre" class="section section--soft" aria-labelledby="sobre-title">
+    <section id="contato" class="section section--white" aria-labelledby="sobre-title">
       <div class="container">
 
         <p class="visually-hidden">A Ultragaz Anápolis é uma distribuidora autorizada de gás de cozinha e água mineral localizada na Rua Martinho Fontes, 374, Vila Santa Maria de Nazareth, em Anápolis – GO. Atende de segunda a sábado com entrega rápida de botijões P5, P13, P20 e P45, além de galões de água mineral 20 litros e acessórios para gás.</p>
@@ -565,21 +581,15 @@
 
         </div>
       </div>
-    </section>
 
-
-    <!-- ══════════════════════════════════
-         LOCALIZAÇÃO
-    ══════════════════════════════════ -->
-    <section id="localizacao" class="section section--white" aria-labelledby="localizacao-title">
-      <div class="container">
+      <!-- LOCALIZAÇÃO -->
+      <div class="container" style="margin-top:56px">
         <div style="text-align:center">
           <span class="section__eyebrow">
             <svg width="10" height="10" viewBox="0 0 10 10" fill="#003DA5"><circle cx="5" cy="5" r="5"/></svg>
             Onde estamos
           </span>
           <h2 class="section__title section__title--center" id="localizacao-title">Venha nos visitar</h2>
-          <p class="section__subtitle">Ou peça pelo WhatsApp e receba em casa.</p>
         </div>
 
         <div class="location__wrapper">
@@ -601,17 +611,13 @@
               </div>
             </div>
 
-            <div class="location__address-item">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.22 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <div class="location__address-item location__address-item--highlight">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#003DA5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
               <div>
-                <strong>Telefone</strong><br>
-                <a href="tel:+556237061710" class="footer__contact-link">(62) 3706-1710</a>
+                <strong>Retirada na loja</strong><br>
+                <span>Todos os dias: 8h às 23h</span>
               </div>
             </div>
-
-            <p class="location__detail">
-              Atendemos toda a cidade de Anápolis e bairros da região. Faça seu pedido pelo WhatsApp e receba no conforto da sua casa.
-            </p>
 
             <div class="location__actions">
               <a href="https://www.google.com/maps/dir/?api=1&destination=-16.325644,-48.940027"
@@ -641,14 +647,9 @@
           </div>
         </div>
       </div>
-    </section>
 
-
-    <!-- ══════════════════════════════════
-         FAQ
-    ══════════════════════════════════ -->
-    <section id="faq" class="section section--soft" aria-labelledby="faq-title">
-      <div class="container" style="max-width:760px">
+      <!-- FAQ -->
+      <div class="container" style="max-width:760px;margin-top:56px">
         <div style="text-align:center">
           <span class="section__eyebrow">
             <svg width="10" height="10" viewBox="0 0 10 10" fill="#003DA5"><circle cx="5" cy="5" r="5"/></svg>
@@ -721,6 +722,7 @@
 
         </div>
       </div>
+
     </section>
 
   </main>
@@ -735,10 +737,7 @@
       <div class="footer__grid">
 
         <div>
-          <div class="footer__brand-logo">
-            <img src="img/galeria/LOGOTIPO FUND TRANSP.png" alt="Logotipo Ultragaz Anápolis" style="height:130px;width:auto;object-fit:contain">
-          </div>
-          <p class="footer__brand-desc">Entrega rápida de gás de cozinha e água mineral em Anápolis – GO. Vila Santa Maria de Nazareth.</p>
+<p class="footer__brand-desc">Entrega rápida de gás de cozinha e água mineral em Anápolis – GO. Vila Santa Maria de Nazareth.</p>
         </div>
 
         <div>

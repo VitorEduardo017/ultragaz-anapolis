@@ -44,7 +44,7 @@
   --grad-card:    linear-gradient(145deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
   --grad-blue-soft: linear-gradient(180deg, #EEF4FF 0%, #F8FAFF 100%);
   --grad-green:   linear-gradient(135deg, #25D366, #128C4E);
-  --grad-footer:  linear-gradient(180deg, #0F1629 0%, #111827 100%);
+  --grad-footer:  linear-gradient(180deg, #003DA5 0%, #0050CC 100%);
 
   /* Glassmorphism */
   --glass-bg:     rgba(255, 255, 255, 0.72);
@@ -73,7 +73,7 @@
 
   /* Espaçamento */
   --section-py:   64px;
-  --section-px:   20px;
+  --section-px:   28px;
   --container:    1200px;
 }
 
@@ -1184,7 +1184,7 @@ button { font-family: var(--font); }
 @media (min-width: 768px) {
   :root {
     --section-py:  96px;
-    --section-px:  40px;
+    --section-px:  60px;
   }
 
   /* Header */
